@@ -1,0 +1,18 @@
+sudo
+apt update
+apt dist-upgrade
+reboot
+
+apt install nala
+nala fetch
+nala upgrade
+
+nala install i3 xorg alacritty rofi xinput pipewire wireplumber pipewire-pulse pulseaudio-utils xwallpaper git lightdm flatpak lm-sensors brightnessctl
+
+systemctl enable --now lightdm
+flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
+
+nala --purge autoremove
+nala remove dmenu i3lock
+
+reboot
