@@ -16,3 +16,5 @@ nala --purge autoremove
 nala remove dmenu i3lock
 
 reboot
+
+/sys/devices/system/cpu/intel_pstate/no_turbo make it 1
