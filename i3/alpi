@@ -7,14 +7,11 @@ apk add dbus
 dbus-uuidgen > /var/lib/dbus/machine-id
 rc-update add dbus
 
-apk add i3wm i3status rofi alacritty
+apk add i3wm i3status rofi alacritty nano xrandr xwallpaper lightdm lightdm-gtk-greeter
+rc-update add lightdm
 
 addgroup a video
 addgroup a wheel
 addgroup a input
 
-mkdir -p ~/.config/i3
-mkdir -p ~/.config/i3status
-mv config ~/.config/i3/config
-mv statusconfig ~/.config/i3status/config
 
