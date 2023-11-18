@@ -1,3 +1,20 @@
-doas apk update
-doas apk upgrade
+setup-xorg-base
+apk update
+apk upgrade
+
+apk add font-dejavu
+apk add dbus
+dbus-uuidgen > /var/lib/dbus/machine-id
+rc-update add dbus
+
+apk add i3wm i3status rofi alacritty
+
+addgroup a video
+addgroup a wheel
+addgroup a input
+
+mkdir -p ~/.config/i3
+mkdir -p ~/.config/i3status
+mv config ~/.config/i3/config
+mv statusconfig ~/.config/i3status/config
 
