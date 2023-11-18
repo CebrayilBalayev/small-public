@@ -7,7 +7,7 @@ apk add dbus
 dbus-uuidgen > /var/lib/dbus/machine-id
 rc-update add dbus
 
-apk add i3wm i3status rofi alacritty nano xrandr xwallpaper lightdm lightdm-gtk-greeter ranger
+apk add i3wm i3status rofi alacritty nano xrandr xwallpaper lightdm lightdm-gtk-greeter ranger xinput
 rc-update add lightdm
 
 addgroup a video
