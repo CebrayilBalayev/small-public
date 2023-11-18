@@ -14,4 +14,8 @@ addgroup a video
 addgroup a wheel
 addgroup a input
 
+mkdir -p /home/a/.config/i3
+mkdir -p /home/a/.config/i3status
 
+mv config /home/a/.config/i3/config
+mv statusconfig /home/a/.config/i3status/config
