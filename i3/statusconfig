@@ -32,6 +32,7 @@ ethernet _first_ {
 
 battery all {
         format = "%status %percentage %remaining"
+        last_full_capacity = true
 }
 
 disk "/" {
@@ -49,6 +50,6 @@ memory {
 }
 
 tztime local {
-        format = "%d/%m"
-        #format = "%d/%m %H:%M"
+        #format = "%d/%m"
+        format = "%d/%m %H:%M"
 }
